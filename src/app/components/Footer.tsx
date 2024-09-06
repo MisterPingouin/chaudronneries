@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
 
       <div className="flex items-center space-x-2">
-        <Image src="/icons/pin-24px.svg" alt="Location" width={24} height={24} />
+        <Image src="/icons/Pin-24px.svg" alt="Location" width={24} height={24} />
         <a
           href="https://www.google.com/maps/search/?api=1&query=124-126+rue+de+Rosny+93100+Montreuil"
           target="_blank"
@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
 
       <div className="flex items-center space-x-2">
-        <Image src="/icons/insta-24px.svg" alt="Instagram" width={24} height={24} />
+        <Image src="/icons/Insta-24px.svg" alt="Instagram" width={24} height={24} />
         <Link
           href="https://www.instagram.com/leschaudronneries/"
           className="text-link font-semibold hover:text-primary"
