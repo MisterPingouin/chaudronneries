@@ -22,24 +22,24 @@ export default function Home() {
       <div className="relative z-20 flex flex-col items-center justify-between h-full text-white pt-11">
         <header className="flex items-center justify-center">
           <Link href="/">
-              <div className="lg:hidden">
-                <Image
-                  src="/images/LogoMobile.svg"
-                  width={231}
-                  height={83}
-                  alt="Logo"
-                  className="w-auto h-auto"
-                />
-              </div>
-              <div className="hidden lg:block">
-                <Image
-                  src="/images/LogoDesktop.svg"
-                  width={294}
-                  height={110}
-                  alt="Logo"
-                  className="w-auto h-auto"
-                />
-              </div>
+            <div className="lg:hidden">
+              <Image
+                src="/images/LogoMobile.svg"
+                width={231}
+                height={83}
+                alt="Logo"
+                className="w-auto h-auto"
+              />
+            </div>
+            <div className="hidden lg:block">
+              <Image
+                src="/images/LogoDesktop.svg"
+                width={294}
+                height={110}
+                alt="Logo"
+                className="w-auto h-auto"
+              />
+            </div>
           </Link>
         </header>
 
@@ -101,7 +101,9 @@ export default function Home() {
               <div className="px-6 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic">
                 <p className="lg:hidden">résidences pour projets</p>
                 <p className="lg:hidden">sociétaux</p>
-                <p className="hidden lg:block">résidences pour projets sociétaux</p>
+                <p className="hidden lg:block">
+                  résidences pour projets sociétaux
+                </p>
               </div>
             </Link>
             <Link href="https://jakmousse.org/">

@@ -1,9 +1,11 @@
-"use client"
-import { useEffect } from 'react';
+"use client";
+import { useEffect } from "react";
 
 const Signature = () => {
   useEffect(() => {
-    const comment = document.createComment('Site développé par Anthony Pham (WIB) - dev.anthonypham@gmail.com');
+    const comment = document.createComment(
+      "Site développé par Anthony Pham (WIB) - dev.anthonypham@gmail.com"
+    );
     document.body.appendChild(comment);
   }, []);
 
