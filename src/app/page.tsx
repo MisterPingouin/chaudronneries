@@ -21,34 +21,36 @@ export default function Home() {
       {/* Content Overlay */}
       <div className="relative z-20 flex flex-col items-center justify-between h-full text-white pt-11">
         <header className="flex items-center justify-center">
-          <div className="lg:hidden">
-            <Image
-              src="/images/LogoMobile.svg"
-              width={231}
-              height={83}
-              alt="Logo"
-              className="w-auto h-auto"
-            />
-          </div>
-          <div className="hidden lg:block">
-            <Image
-              src="/images/LogoDesktop.svg"
-              width={294}
-              height={110}
-              alt="Logo"
-              className="w-auto h-auto"
-            />
-          </div>
+          <Link href="/">
+              <div className="lg:hidden">
+                <Image
+                  src="/images/LogoMobile.svg"
+                  width={231}
+                  height={83}
+                  alt="Logo"
+                  className="w-auto h-auto"
+                />
+              </div>
+              <div className="hidden lg:block">
+                <Image
+                  src="/images/LogoDesktop.svg"
+                  width={294}
+                  height={110}
+                  alt="Logo"
+                  className="w-auto h-auto"
+                />
+              </div>
+          </Link>
         </header>
 
         <div className="relative flex flex-col">
           <div className="flex items-end px-6 pb-2 lg:hidden">
-            <h1 className="mt-2 text-heading font-bold italic">
+            <h1 className="mt-2 text-heading font-semibold italic">
               LIEU DE CRÉATION AUDIOVISUELLE, CULTURELLE ET ÉVÉNEMENTIELLE
             </h1>
             {/* Pastille verte */}
             <div className="pr-12">
-              <Link href="/contact">
+              <Link href="/leschaudronneries">
                 <div className="w-10 h-10 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-green-500 transition duration-300 cursor-pointer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,9 +68,10 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
           {/* Encart Desktop */}
           <div className="hidden lg:flex flex-col items-center justify-center">
-            <h1 className="mt-2 text-heading font-bold italic w-[379px] text-center leading-8">
+            <h1 className="mt-2 text-heading font-semibold italic w-[379px] text-center leading-8">
               LIEU DE CRÉATION AUDIOVISUELLE, CULTURELLE ET ÉVÉNEMENTIELLE
             </h1>
             {/* Pastille verte Desktop */}
@@ -92,22 +95,21 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
           <div className="flex flex-col lg:flex-row py-4 pt-14 lg:mt-4">
-          <Link href="https://www.leschaudronneries.com/residence.html">
-          <div className="px-6 text-body uppercase font-bold underline underline-offset-2 decoration-1 italic">
-            <p className="lg:hidden">résidences pour projets</p>
-            <p className="lg:hidden">sociétaux</p>
-            <p className="hidden lg:block">résidences pour projets sociétaux</p>
-          </div>
-          </Link>
-          <Link href="https://jakmousse.org/">
-          <div className="px-6 py-5 text-body uppercase font-bold underline underline-offset-2 decoration-1 italic lg:flex lg:py-0 lg:pb-8">
-          <p>
-          Jakmousse +- 
-          </p>
-          <p>Art Design Experiment</p>
-          </div>
-          </Link>
+            <Link href="https://www.leschaudronneries.com/residence.html">
+              <div className="px-6 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic">
+                <p className="lg:hidden">résidences pour projets</p>
+                <p className="lg:hidden">sociétaux</p>
+                <p className="hidden lg:block">résidences pour projets sociétaux</p>
+              </div>
+            </Link>
+            <Link href="https://jakmousse.org/">
+              <div className="px-6 py-5 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic lg:flex lg:py-0 lg:pb-8">
+                <p>Jakmousse +-</p>
+                <p>Art Design Experiment</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
