@@ -77,7 +77,7 @@ export default function Home() {
             {/* Pastille verte Desktop */}
             <div className="pt-6">
               <Link href="/leschaudronneries">
-                <div className="px-5 w-auto h-10 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-green-500 transition duration-300 cursor-pointer">
+                <div className="px-5 w-auto h-10 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-white transition duration-300 cursor-pointer">
                   <p className="text-label font-semibold pr-1">VISITEZ</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

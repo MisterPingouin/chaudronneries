@@ -9,8 +9,12 @@ const LesChaudronneries = () => {
   return (
     <div
       className="relative h-screen bg-black bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/Background.jpg')" }}
+      style={{ backgroundImage: "url('/images/Background.webp')" }}
     >
+
+      {/* Overlay semi-transparent avec la couleur #0B1214 à 31% */}
+      <div className="absolute top-0 left-0 w-full h-full bg-[rgba(11,18,20,0.31)] z-10"></div>
+
       {/* Content Overlay */}
       <div className="relative z-20 flex flex-col items-center justify-between h-full text-white pt-11">
         <header className="flex flex-col items-center justify-center">
