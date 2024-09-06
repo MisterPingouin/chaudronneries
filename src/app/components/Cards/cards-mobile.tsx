@@ -24,9 +24,6 @@ const CardsMobile = () => {
           <p>NORA CHIPAUMIRE</p>
         </div>
         {/* Button section */}
-          <button className="hidden bg-[#75FB4D] text-black font-bold py-2 px-4 rounded-full hover:bg-green-500 transition duration-300">
-            DÉCOUVRIR
-          </button>
           <div className="ml-auto">
           <Link href="https://www.festival-automne.com/fr/edition-2024/nora-chipaumire-dambudzo">
             <div className="w-10 h-10 bg-[#75FB4D] text-black rounded-full flex items-center justify-center shadow-lg hover:bg-green-500 transition duration-300 cursor-pointer">

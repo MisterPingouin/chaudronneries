@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import CardsMobile from '../components/Cards/cards-mobile';
+import CardsDesktop from '../components/Cards/cards-desktop';
 import Footer from '../components/Footer';
 import Link from "next/link";
 
@@ -38,8 +39,14 @@ const LesChaudronneries = () => {
         </header>
 
         {/* CardsMobile component */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 lg:hidden">
          <CardsMobile />
+        <Footer />
+        </div>
+        {/* CardsDesktop component */}
+
+        <div className="hidden lg:flex flex-col gap-6">
+         <CardsDesktop />
         <Footer />
         </div>
       </div>
