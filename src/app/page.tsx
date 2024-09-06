@@ -1,101 +1,116 @@
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="relative h-screen bg-black">
+      {/* Video Background */}
+      <video
+        className="absolute top-0 left-0 w-full h-3/4 lg:h-full object-cover z-0"
+        src="/videos/ChaudronneriesHomepageVideo.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* Overlay semi-transparent avec la couleur #0B1214 à 31% */}
+      <div className="absolute top-0 left-0 w-full h-full bg-[rgba(11,18,20,0.31)] z-10"></div>
+
+      {/* Content Overlay */}
+      <div className="relative z-20 flex flex-col items-center justify-between h-full text-white pt-11">
+        <header className="flex items-center justify-center">
+          <div className="lg:hidden">
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/images/LogoMobile.svg"
+              width={231}
+              height={83}
+              alt="Logo"
+              className="w-auto h-auto"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <div className="hidden lg:block">
+            <Image
+              src="/images/LogoDesktop.svg"
+              width={294}
+              height={110}
+              alt="Logo"
+              className="w-auto h-auto"
+            />
+          </div>
+        </header>
+
+        <div className="relative flex flex-col">
+          <div className="flex items-end px-6 pb-2 lg:hidden">
+            <h1 className="mt-2 text-heading font-bold italic">
+              LIEU DE CRÉATION AUDIOVISUELLE, CULTURELLE ET ÉVÉNEMENTIELLE
+            </h1>
+            {/* Pastille verte */}
+            <div className="pr-12">
+              <Link href="/contact">
+                <div className="w-10 h-10 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-green-500 transition duration-300 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6"
+                  >
+                    <path d="M9 6l6 6-6 6" />
+                  </svg>
+                </div>
+              </Link>
+            </div>
+          </div>
+          {/* Encart Desktop */}
+          <div className="hidden lg:flex flex-col items-center justify-center">
+            <h1 className="mt-2 text-heading font-bold italic w-[379px] text-center leading-8">
+              LIEU DE CRÉATION AUDIOVISUELLE, CULTURELLE ET ÉVÉNEMENTIELLE
+            </h1>
+            {/* Pastille verte Desktop */}
+            <div className="pt-6">
+              <Link href="/leschaudronneries">
+                <div className="px-5 w-auto h-10 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-green-500 transition duration-300 cursor-pointer">
+                  <p className="text-label font-semibold pr-1">VISITEZ</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6"
+                  >
+                    <path d="M9 6l6 6-6 6" />
+                  </svg>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-col lg:flex-row py-4 pt-14 lg:mt-4">
+          <Link href="https://www.leschaudronneries.com/residence.html">
+          <div className="px-6 text-body uppercase font-bold underline underline-offset-2 decoration-1 italic">
+            <p className="lg:hidden">résidences pour projets</p>
+            <p className="lg:hidden">sociétaux</p>
+            <p className="hidden lg:block">résidences pour projets sociétaux</p>
+          </div>
+          </Link>
+          <Link href="https://jakmousse.org/">
+          <div className="px-6 py-5 text-body uppercase font-bold underline underline-offset-2 decoration-1 italic lg:flex lg:py-0 lg:pb-8">
+          <p>
+          Jakmousse +- 
+          </p>
+          <p>Art Design Experiment</p>
+          </div>
+          </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
