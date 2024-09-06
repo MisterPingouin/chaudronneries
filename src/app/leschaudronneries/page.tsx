@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import CardsMobile from '../components/Cards/cards-mobile';
+import Footer from '../components/Footer';
 import Link from "next/link";
 
 const LesChaudronneries = () => {
@@ -37,8 +38,9 @@ const LesChaudronneries = () => {
         </header>
 
         {/* CardsMobile component */}
-        <div className="z-30 flex items-center justify-center">
-          <CardsMobile />
+        <div className="flex flex-col gap-6">
+         <CardsMobile />
+        <Footer />
         </div>
       </div>
     </div>
