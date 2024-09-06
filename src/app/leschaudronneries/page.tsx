@@ -13,7 +13,7 @@ const LesChaudronneries = () => {
     >
       {/* Content Overlay */}
       <div className="relative z-20 flex flex-col items-center justify-between h-full text-white pt-11">
-        <header className="flex items-center justify-center">
+        <header className="flex flex-col items-center justify-center">
         <Link href="/">
           {/* Logo Mobile */}
           <div className="lg:hidden">
@@ -36,8 +36,8 @@ const LesChaudronneries = () => {
             />
           </div>
           </Link>
+          <div className="uppercase">Lieu de création audiovisuelle, culturelle et événementielle </div>
         </header>
-
         {/* CardsMobile component */}
         <div className="flex flex-col gap-6 lg:hidden">
          <CardsMobile />

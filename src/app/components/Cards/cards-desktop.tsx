@@ -10,7 +10,7 @@ const CardsDesktop = () => {
   
         {/* Title and event description */}
         <div className="text-heading font-semibold italic pt-2 ">
-          FESTIVAL D'AUTOMNE
+          FESTIVAL D&apos;AUTOMNE
         </div>
         <div className="text-body font-semibold italic">
           12, 14 & 15 SEPTEMBRE 2024

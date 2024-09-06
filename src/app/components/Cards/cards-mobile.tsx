@@ -10,7 +10,7 @@ const CardsMobile = () => {
   
         {/* Title and event description */}
         <div className="text-heading font-semibold italic ">
-          FESTIVAL D'AUTOMNE
+          FESTIVAL D&apos;AUTOMNE
         </div>
         <div className="text-body font-semibold italic">
           12, 14 & 15 SEPTEMBRE 2024
