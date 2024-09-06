@@ -36,7 +36,7 @@ const LesChaudronneries = () => {
             />
           </div>
           </Link>
-          <div className="uppercase">Lieu de création audiovisuelle, culturelle et événementielle </div>
+          <div className="hidden lg:block pt-5 uppercase text-heading font-semibold italic max-w-[570px] text-center">Lieu de création audiovisuelle, culturelle et événementielle</div>
         </header>
         {/* CardsMobile component */}
         <div className="flex flex-col gap-6 lg:hidden">
