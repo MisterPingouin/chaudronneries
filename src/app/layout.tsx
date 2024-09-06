@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Work_Sans } from 'next/font/google';
+import Signature from './components/Signature'; 
 import "./globals.css";
 
 const workSans = Work_Sans({
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body>
         {children}
       </body>
+      <Signature /> 
     </html>
   );
 }
