@@ -69,7 +69,7 @@ export default function Home() {
               LIEU DE CRÉATION AUDIOVISUELLE, CULTURELLE ET ÉVÉNEMENTIELLE
             </h1>
             {/* Pastille verte */}
-            <div className="pr-12">
+            <div className="pr-10">
               <Link href="/leschaudronneries">
                 <div className="w-10 h-10 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-green-500 transition duration-300 cursor-pointer">
                   <svg
@@ -128,8 +128,9 @@ export default function Home() {
             </Link>
             <Link href="https://jakmousse.org/">
               <div className="px-6 py-5 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic lg:flex lg:py-0 lg:pb-8">
-                <p>Jakmousse +-</p>
-                <p>Art Design Experiment</p>
+                <p className="lg:hidden">Jakmousse +-</p>
+                <p className="lg:hidden">Art Design Experiment</p>
+                <p className="hidden lg:block">Jakmousse +- Art Design Experiment</p>
               </div>
             </Link>
           </div>
