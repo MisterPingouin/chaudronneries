@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const CardsDesktop = () => {
   return (
-    <div className="w-[500px] h-auto bg-background-black text-white rounded-lg shadow-lg opacity-65 px-10 py-10">
+    <div className="w-[500px] h-auto bg-background-black text-white rounded-lg shadow-lg opacity-80 px-10 py-10">
       {/* Tag section */}
       <div className="bg-white text-black text-label font-bold uppercase rounded-sm px-2 py-0.5 w-fit mb-4">
         ÉVÈNEMENT

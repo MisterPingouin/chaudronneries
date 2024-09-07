@@ -59,9 +59,9 @@ const LesChaudronneries = () => {
               />
             </div>
           </Link>
-          <div className="hidden lg:block pt-5 uppercase text-heading font-semibold italic max-w-[570px] text-center">
+          {/* <div className="hidden pt-5 uppercase text-heading font-semibold italic max-w-[570px] text-center">
             Lieu de création audiovisuelle, culturelle et événementielle
-          </div>
+          </div> */}
         </header>
         {/* CardsMobile component */}
         <div className="flex flex-col gap-6 lg:hidden">

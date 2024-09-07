@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const CardsMobile = () => {
   return (
-    <div className="w-[343px] h-auto bg-background-black text-white rounded-lg shadow-lg opacity-65 px-4 py-6">
+    <div className="w-[343px] h-auto bg-background-black text-white rounded-lg shadow-lg opacity-80 px-4 py-6">
       {/* Tag section */}
       <div className="bg-white text-black text-label font-bold uppercase rounded-sm px-2 py-0.5 w-fit mb-4">
         ÉVÈNEMENT
