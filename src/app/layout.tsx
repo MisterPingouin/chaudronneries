@@ -11,17 +11,40 @@ const workSans = Work_Sans({
   variable: "--font-workSans",
 });
 
+// Métadonnées globales pour tout le site
 export const metadata: Metadata = {
   title: "Les Chaudronneries",
-  description: "Chaudronneries",
-  keywords: "Chaudronneries",
+  description: "Lieu de création audiovisuelle, culturelle et événementielle",
+  keywords: ["Chaudronneries", "création", "audiovisuel", "événementiel", "culturel"],
+  openGraph: {
+    title: "Les Chaudronneries",
+    description: "Lieu de création audiovisuelle, culturelle et événementielle",
+    url: "https://www.leschaudronneries.com",
+    siteName: "Les Chaudronneries",
+    images: [
+      {
+        url: "/images/LogoDesktop.svg",
+        width: 800,
+        height: 600,
+        alt: "Logo Les Chaudronneries",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Les Chaudronneries",
+    description: "Lieu de création audiovisuelle, culturelle et événementielle",
+    images: ["/images/LogoDesktop.svg"],
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="fr" className={workSans.className}>
       <head>

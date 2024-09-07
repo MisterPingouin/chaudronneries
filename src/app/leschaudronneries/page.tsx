@@ -1,9 +1,29 @@
+import { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
 import CardsMobile from "../components/Cards/cards-mobile";
 import CardsDesktop from "../components/Cards/cards-desktop";
 import Footer from "../components/Footer";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Homepage - Les Chaudronneries",
+  description: "Lieu de création audiovisuelle, culturelle et Sociétal",
+  keywords: ["Les Chaudronneries", "usine", "entrepôt", "montreuil", "paris"],
+  openGraph: {
+    title: "Chaudrons - Les Chaudronneries",
+    description: "Découvrez l'univers de création audiovisuelle, culturelle et événementielle des Chaudronneries.",
+    url: "https://www.leschaudronneries.com",
+    images: [
+      {
+        url: "/images/LogoDesktop.svg",
+        width: 800,
+        height: 600,
+        alt: "Logo Les Chaudronneries",
+      },
+    ],
+  },
+};
 
 const LesChaudronneries = () => {
   return (
