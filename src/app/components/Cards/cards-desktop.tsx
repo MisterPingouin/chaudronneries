@@ -26,7 +26,7 @@ const CardsDesktop = () => {
         {/* Button section */}
         <Link href="https://www.festival-automne.com/fr/edition-2024/nora-chipaumire-dambudzo">
           <div className="mr-6 px-3 w-auto h-10 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-white transition duration-300 cursor-pointer">
-            <p className="text-label font-semibold pr-1 underline">DÉCOUVRIR</p>
+            <p className="text-label font-semibold pr-1">DÉCOUVRIR</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
