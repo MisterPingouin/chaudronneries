@@ -118,7 +118,7 @@ export default function Home() {
 
           <div className="flex flex-col lg:flex-row py-4 pt-14 lg:mt-4">
             <Link href="https://www.leschaudronneries.com/residence.html">
-              <div className="px-6 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic">
+              <div className="hover:text-primary px-6 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic">
                 <p className="lg:hidden">résidences pour projets</p>
                 <p className="lg:hidden">sociétaux</p>
                 <p className="hidden lg:block">
@@ -127,7 +127,7 @@ export default function Home() {
               </div>
             </Link>
             <Link href="https://jakmousse.org/">
-              <div className="px-6 py-5 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic lg:flex lg:py-0 lg:pb-8">
+              <div className="hover:text-primary px-6 py-5 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic lg:flex lg:py-0 lg:pb-8">
                 <p className="lg:hidden">Jakmousse +-</p>
                 <p className="lg:hidden">Art Design Experiment</p>
                 <p className="hidden lg:block">Jakmousse +- Art Design Experiment</p>
