@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col lg:flex-row py-4 pt-14 lg:mt-4">
-            <Link href="https://www.leschaudronneries.com/residence.html">
+            <Link href="http://leschaud.cluster003.ovh.net/residence.html">
               <div className="hover:text-primary px-6 text-body uppercase font-semibold underline underline-offset-2 decoration-1 italic">
                 <p className="lg:hidden">résidences pour projets</p>
                 <p className="lg:hidden">sociétaux</p>
