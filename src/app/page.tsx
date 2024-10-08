@@ -96,7 +96,7 @@ export default function Home() {
             </h1>
             {/* Pastille verte Desktop */}
             <div className="pt-6">
-              <Link href="/leschaudronneries">
+              <Link href="http://leschaud.cluster003.ovh.net/accueil.html">
                 <div className="px-5 w-auto h-10 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-white transition duration-300 cursor-pointer">
                   <p className="text-label font-semibold pr-1">VISITEZ</p>
                   <svg
